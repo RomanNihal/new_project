@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: amitkumardharia_ai_backend
+    ports:
+      - "8011:8011"
+    env_file:
+      - .env
+    environment:
+      - QDRANT_URL=http://qdrant:6334
+    volumes:
+      - .:/app
+    depends_on:
+      - qdrant
+    restart: unless-stopped
+
+  qdrant:
+    image: qdrant/qdrant
+    container_name: qdrant_db
+    ports:
+      - "6334:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    restart: unless-stopped
+
+volumes:
+  qdrant_data:
