@@ -1,0 +1,82 @@
+{
+  "service": {
+    "_id": {
+      "$oid": "696a8158424cc948cc75fe84"
+    },
+    "professionalId": {
+      "$oid": "696a70efb9ed762341373f7f"
+    },
+    "title": "Hair Styling & Blow Dry",
+    "description": "Professional Hair styling for any occasion",
+    "category": "HAIRCUT",
+    "durationInMinutes": 40,
+    "service_locations": [
+      "MY_STUDIO",
+      "CLIENT_LOCATION"
+    ],
+    "price": 40.0,
+    "isActive": true,
+    "createdAt": {
+      "$date": "2026-01-16T18:20:08.801Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-16T18:20:08.801Z"
+    }
+  },
+  "professional": {
+    "_id": {
+      "$oid": "696a70efb9ed762341373f7f"
+    },
+    "userId": {
+      "$oid": "696a70efb9ed762341373f7e"
+    },
+    "specialization": [
+      "BARBER",
+      "HAIRSTYLIST",
+      "NAIL_TECHNICIAN"
+    ],
+    "workingDays": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "bio": "Experienced barber and stylist",
+    "experience": 5,
+    "rating": 5.0,
+    "totalReviews": 1,
+    "isAvailable": true,
+    "verification": "PENDING",
+    "earnings": 0.0,
+    "createdAt": {
+      "$date": "2026-01-16T17:10:07.168Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-17T06:38:01.143Z"
+    },
+    "startTime": "10:00 AM",
+    "endTime": "11:00 PM"
+  },
+  "user": {
+    "_id": {
+      "$oid": "696a659e9854ed3c025aa917"
+    },
+    "name": "Admin",
+    "email": "admin@gmail.com",
+    "isEmailVerified": true,
+    "password": "$2b$12$eHk5dH//SxAI/Vz9VvvPbOcH/Lxa3AVLDoBHhKUBvblQu5sSBCK8e",
+    "role": "SUPER_ADMIN",
+    "status": "ACTIVE",
+    "isVerified": true,
+    "isResetPassword": false,
+    "canResetPassword": false,
+    "isResentOtp": false,
+    "isSocial": false,
+    "createdAt": {
+      "$date": "2026-01-16T16:21:50.897Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-16T16:21:50.897Z"
+    }
+  }
+}

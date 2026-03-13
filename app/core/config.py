@@ -13,7 +13,9 @@ class Settings(BaseSettings):
     # MongoDB Config
     MONGO_URI: str = "mongodb://localhost:27017" # Replace with your URI in .env
     MONGO_DB: str = "chatbot_db" # Replace with your DB name
-    MONGO_COLLECTION: str = "professionals" # Replace with your Collection name
+    SERVICE_COLLECTION: str = "service"
+    PROFEAAIONAL_COLLECTION: str = "professionals"
+    USERS_COLLECTION: str = "users"
 
     model_config = SettingsConfigDict(
         env_file=".env", 
